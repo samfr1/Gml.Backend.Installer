@@ -66,7 +66,7 @@ content=$(cat ./frontend/Gml.Web.Client/.env)
 
 # Обновление фронтенда
 rm -Rf ./frontend
-git clone --single-branch https://github.com/Gml-Launcher/Gml.Web.Client.git ./frontend/Gml.Web.Client
+git clone --single-branch https://github.com/samfr1/Gml.Web.Client.git ./frontend/Gml.Web.Client
 
 # Восстановление .env
 echo "$content" > frontend/Gml.Web.Client/.env
