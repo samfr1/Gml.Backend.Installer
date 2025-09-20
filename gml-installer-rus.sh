@@ -211,7 +211,7 @@ fi
 CURRENT_STEP=$((CURRENT_STEP + 1))
 
 # Загрузка docker-compose.yml
-(wget https://raw.githubusercontent.com/GamerVII-NET/Gml.Backend/master/docker-compose-prod.yml -O docker-compose.yml >/dev/null 2>&1) &
+(wget https://raw.githubusercontent.com/samfr1/Gml.Backend/master/docker-compose-prod.yml -O docker-compose.yml >/dev/null 2>&1) &
 show_spinner $! "[System] Загрузка конфигурации"
 
 CURRENT_STEP=$((CURRENT_STEP + 1))
@@ -276,7 +276,7 @@ SERVICE_TEXTURE_ENDPOINT=http://gml-web-skins:8085
 MARKET_ENDPOINT=https://gml-market.recloud.tech" > .env
 
     rm -Rf ./frontend
-    (git clone --single-branch https://github.com/Gml-Launcher/Gml.Web.Client.git ./frontend/Gml.Web.Client >/dev/null 2>&1) &
+    (git clone --single-branch https://github.com/samfr1/Gml.Web.Client.git ./frontend/Gml.Web.Client >/dev/null 2>&1) &
     show_spinner $! "[GML] Клонирование frontend"
 
     # Создание файла .env и запись в него переменных
